@@ -144,9 +144,11 @@ Sometimes we find that due to the small sample size, the current **Network/CPU/M
 
 > At the same time, this tool is also a good tool for us to learn about the "browser's process of load and rendering" and "performance optimization", so that we don't get wrong conclusions when there are too few samples
 
-## Performance item
+## PerformanceTiming
 
-![timing](http://7xt9n8.com2.z0.glb.clouddn.com/timing.jpg)
+![timing](http://7xt9n8.com2.z0.glb.clouddn.com/PerformanceTiming.png)
+
+https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming
 
 ## Roadmap
 
