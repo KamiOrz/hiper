@@ -58,8 +58,26 @@ Options:
    --no-online                  disable network (defalut: false)
    -h, --help                   output usage information
 ```
+## PerformanceTiming
 
-For instance
+![timing](http://7xt9n8.com2.z0.glb.clouddn.com/PerformanceTiming.png)
+
+https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming
+
+### Output message explain
+
+| Item                           | Explain                                      |
+| ------------------------------ | -------------------------------------------- |
+| DNS lookup time                | domainLookupEnd          - domainLookupStart |
+| TCP connect time               | connectEnd               - connectStart      |
+| TTFB                           | responseStart            - requestStart      |
+| Download time of the page      | responseEnd              - responseStart     |
+| After DOM Ready download time  | domComplete              - domInteractive    |
+| White screen time              | domInteractive           - navigationStart   |
+| DOM Ready time                 | domContentLoadedEventEnd - navigationStart   |
+| Load time                      | loadEventEnd             - navigationStart   |
+
+### For instance
 
 ```bash
  # We can omit the protocol header if has omited, the protocol header will be `http://`
@@ -143,12 +161,6 @@ After we have developed a project or optimized the performance of a project, how
 Sometimes we find that due to the small sample size, the current **Network/CPU/Memory** load is heavily impacted, and sometimes the optimized project is slower than before the optimization. If there is a tool, request web page many times, and then taking out the various performance indicators averaging, we can **very accurately** know the optimization is positive or negative. In addition, you can also make a comparison and get **accurate data** about **how much you have optimized**. This tool is designed to solve the pain point.
 
 > At the same time, this tool is also a good tool for us to learn about the "browser's process of load and rendering" and "performance optimization", so that we don't get wrong conclusions when there are too few samples
-
-## PerformanceTiming
-
-![timing](http://7xt9n8.com2.z0.glb.clouddn.com/PerformanceTiming.png)
-
-https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming
 
 ## Roadmap
 
