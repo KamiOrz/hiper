@@ -42,9 +42,7 @@ npm install hiper -g
 
 https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming
 
-Output message explain
-
-| Item                           | Explain                                      |
+| Key                            | Value                                        |
 | :----------------------------- | :------------------------------------------- |
 | DNS lookup time                | domainLookupEnd          - domainLookupStart |
 | TCP connect time               | connectEnd               - connectStart      |
