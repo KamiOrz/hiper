@@ -40,8 +40,6 @@ npm install hiper -g
 
 ![timing](http://7xt9n8.com2.z0.glb.clouddn.com/PerformanceTiming.png)
 
-https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming
-
 | Key                            | Value                                        |
 | :----------------------------- | :------------------------------------------- |
 | DNS lookup time                | domainLookupEnd          - domainLookupStart |
@@ -52,6 +50,8 @@ https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming
 | White screen time              | domInteractive           - navigationStart   |
 | DOM Ready time                 | domContentLoadedEventEnd - navigationStart   |
 | Load time                      | loadEventEnd             - navigationStart   |
+
+https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming
 
 ## Usage
 
