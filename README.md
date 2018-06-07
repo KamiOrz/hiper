@@ -45,7 +45,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming
 ### Output message explain
 
 | Item                           | Explain                                      |
-| ------------------------------ | -------------------------------------------- |
+| :----------------------------- | :------------------------------------------- |
 | DNS lookup time                | domainLookupEnd          - domainLookupStart |
 | TCP connect time               | connectEnd               - connectStart      |
 | TTFB                           | responseStart            - requestStart      |
