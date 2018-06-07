@@ -42,7 +42,7 @@ npm install hiper -g
 
 https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming
 
-### Output message explain
+Output message explain
 
 | Item                           | Explain                                      |
 | :----------------------------- | :------------------------------------------- |
@@ -78,7 +78,7 @@ Options:
    -h, --help                   output usage information
 ```
 
-### For instance
+For instance
 
 ```bash
  # We can omit the protocol header if has omited, the protocol header will be `http://`
