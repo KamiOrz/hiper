@@ -23,10 +23,6 @@ Hi guys, Please present your issue in English
 - Node.js@>=8.5.4
 - npm@>=5.6.0
 
-## The output
-
-![Hiper](http://7xt9n8.com2.z0.glb.clouddn.com/hiper9.png)
-
 ## Install
 
 ``` bash
@@ -35,6 +31,29 @@ npm install hiper -g
 # or use yarn:
 # yarn global add hiper
 ```
+
+## The output
+
+![Hiper](http://7xt9n8.com2.z0.glb.clouddn.com/hiper9.png)
+
+## PerformanceTiming
+
+![timing](http://7xt9n8.com2.z0.glb.clouddn.com/PerformanceTiming.png)
+
+https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming
+
+### Output message explain
+
+| Item                           | Explain                                      |
+| ------------------------------ | -------------------------------------------- |
+| DNS lookup time                | domainLookupEnd          - domainLookupStart |
+| TCP connect time               | connectEnd               - connectStart      |
+| TTFB                           | responseStart            - requestStart      |
+| Download time of the page      | responseEnd              - responseStart     |
+| After DOM Ready download time  | domComplete              - domInteractive    |
+| White screen time              | domInteractive           - navigationStart   |
+| DOM Ready time                 | domContentLoadedEventEnd - navigationStart   |
+| Load time                      | loadEventEnd             - navigationStart   |
 
 ## Usage
 
@@ -58,24 +77,6 @@ Options:
    --no-online                  disable network (defalut: false)
    -h, --help                   output usage information
 ```
-## PerformanceTiming
-
-![timing](http://7xt9n8.com2.z0.glb.clouddn.com/PerformanceTiming.png)
-
-https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming
-
-### Output message explain
-
-| Item                           | Explain                                      |
-| ------------------------------ | -------------------------------------------- |
-| DNS lookup time                | domainLookupEnd          - domainLookupStart |
-| TCP connect time               | connectEnd               - connectStart      |
-| TTFB                           | responseStart            - requestStart      |
-| Download time of the page      | responseEnd              - responseStart     |
-| After DOM Ready download time  | domComplete              - domInteractive    |
-| White screen time              | domInteractive           - navigationStart   |
-| DOM Ready time                 | domContentLoadedEventEnd - navigationStart   |
-| Load time                      | loadEventEnd             - navigationStart   |
 
 ### For instance
 
